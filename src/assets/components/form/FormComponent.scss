@@ -1,0 +1,51 @@
+@use "../../../partials/typography" as *;
+
+body {
+	background-color: lighten($primary-color, 30%);
+	background-image: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0.122) 1px,
+			transparent 1px
+		),
+		linear-gradient(to right, rgba(255, 255, 255, 0) 1px, transparent 1px);
+	font-family: "Open Sans";
+	box-sizing: border-box;
+}
+.title__header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.875rem;
+}
+
+#reset {
+	border-color: $primary-color;
+	background-color: $primary-color;
+}
+
+.form-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 0.9375rem;
+}
+
+.amount-title {
+	display: flex;
+	padding: 0.89rem 2rem;
+	border-radius: 5px;
+	margin-top: 0.75rem;
+}
+
+.term-title {
+	display: flex;
+}
+
+#label-id {
+	color: rgba(0, 0, 0, 0.527);
+	font-weight: 600;
+}
+.form-image {
+	max-width: 100%;
+}
